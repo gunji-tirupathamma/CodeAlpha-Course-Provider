@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.home-bg-container {
+    background-image: url("https://img.freepik.com/free-vector/abstract-classic-blue-screensaver_23-2148421853.jpg?w=740&t=st=1681576308~exp=1681576908~hmac=8284eb683c900295d8dd98ac7ecddc2cf3ce7198c3b350eb8e61b82564b569e0");
+    background-size: cover;
+    padding: 10px;
+}
+
+.nav-bg-containger {
+    background-color: #fcfc47;
+    background-size: cover;
+    width: 100%;
+}
+
+.nav-image {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.Nxt-logo {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    margin: 10px;
+    margin-left: 100px;
+}
+
+.heading {
+    font-family: ital;
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 10px;
+    margin-top: 20px;
+}
+
+.about-container {
+    background-color: #00ffaa;
+    background-size: cover;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.welcome {
+    font-family: Roboto;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px;
+    margin-top: 20px;
+    padding-left: 10px;
+}
+
+.description {
+    font-family: Roboto;
+    font-size: 15px;
+    margin: 10px;
+    margin-top: 20px;
+    padding-left: 10px;
+}
+
+.course-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #cc80ff;
+    background-size: cover;
+}
+
+.for-it-Container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://thumbs.dreamstime.com/z/digital-information-technology-binary-world-concept-computer-generated-background-graphics-digital-information-technology-binary-134563649.jpg");
+    background-size: cover;
+    margin: 20px;
+    padding: 10px;
+    height: 40vh;
+    border-radius: 10px;
+}
+
+.for-formacy {
+    background-image: url("https://media.istockphoto.com/id/1368548595/photo/abstract-futuristic-pills-wireframe-and-capsule-on-glowing-blue-background-pharmacy-medical.jpg?s=1024x1024&w=is&k=20&c=It_olPnpHpKzXEOeCxZflp8Yd4PT5CaF4wiZPmUTnOo=");
+}
+
+.for-Agricultural {
+    background-image: url("https://plus.unsplash.com/premium_photo-1668624607053-b7b2d6911539?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=982&q=80");
+}
+
+.image {
+    width: 40vw;
+    height: 30vh;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.text-color {
+    font-family: Roboto;
+    font-size: 35px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 10px;
+    padding-left: 3px;
+}
+
+.contat-container {
+    display: flex;
+    flex-direction: column;
+    background-image: radial-gradient(#2dc1f7, #3dfccc, #2dc1f7);
+    background-size: cover;
+    padding: 10px;
+
+}
+
+.question-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #fa61b3;
+    background-size: cover;
+    padding: 10px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    background-size: cover;
+    padding: 10px;
+}
+
+.contact-head {
+    font-family: Roboto;
+    font-size: 30px;
+    font-weight: bold;
+    color: #30302f;
+    margin: 10px;
+    padding-left: 3px;
+}
+
+.address {
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+    margin: 10px;
+    padding-left: 3px;
+}
+
+.address-description {
+    font-family: Roboto;
+    font-size: 18px;
+    color: #30302f;
+    margin: 10px;
+    padding-left: 3px;
+}
+
+.name-input {
+    font-size: 18px;
+    color: #30302f;
+    margin: 10px;
+    padding-left: 3px;
+    width: 500px;
+}
+
+
+.send-button {
+    font-size: 18px;
+    color: #000000;
+    margin: 10px;
+    padding-left: 3px;
+    width: 100px;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+
+.IT-page-ccontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 10px;
+    background-color: #3030f2;
+    background-size: cover;
+    width: 150vw;
+}
+
+.courses-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 10px;
+    margin: 10px;
+    flex-wrap: wrap;
+
+}
+
+.each-course-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #ffffff;
+    background-size: cover;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 60vw;
+}
+
+.python-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #eaf54e;
+    background-size: cover;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.python-image {
+    width: 200px;
+    height: 300px;
+    margin: 10px;
+    border-radius: 10px;
+    align-self: center;
+}
+
+.java-container {
+    background-color: #38fc79;
+}
+
+.java-logo {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 10px;
+    align-self: center;
+}
+
+.testing-container {
+    background-color: #da48f7;
+}
+
+.aws-container {
+    background-color: #f57d95;
+}
+
+.data-container {
+    background-color: #02cc93;
+}
+
+.description-size {
+    font-size: 30px;
+}
+
+.each-course-cont-text {
+    font-size: 25px;
+    align-self: center;
+}

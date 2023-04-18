@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="section-home-page">
+        <div class="Container">
+            <div class="row">
+                <nav class="navbar navbar-expand-lg navbar-light  nav-bg-containger">
+                    <a class="navbar-brand" href="#">
+                        <img src="data:image/png;base64,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" class="nav-image" />
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link active" href="#home">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link nave-bar-text" href="#about">about </a>
+                            <a class="nav-link nave-bar-text" href="#Fields">Field Type</a>
+                            <a class="nav-link nave-bar-text" href="#contact">Contact</a>
+                            <a class="nav-link nave-bar-text" href="#question">Question Section</a>
+                        </div>
+                    </div>
+                </nav>
+                <div id="home" class="col-12 home-bg-container d-flex flex-row">
+                    <h1 class="heading"> WelCome to Educational Services of NXT Wave</h1>
+                    <img src="https://cdn.dribbble.com/users/1937255/screenshots/7711090/media/7d8b934e6c47ffca1e1f160dfaaa2101.png" class="Nxt-logo" />
+                </div>
+                <div id="about" class="col-12 about-container">
+                    <h1 class="welcome">Welcome!</h1>
+                    <p class="description">I’m Rahul Attuluri, CEO of NxtWaveR Disruptive Technologies.<br />
+                        We are on a mission to bridge the gap between industry & academia by rapidly building industry-relevant skills in people.<br />
+                        For the first time in India, we’ve introduced Industry-Ready Certification (IRC) which represents your industry readiness. We’ve designed programs to help anyone gear up for 4.0 Revolution.<br />
+                        For students right after Intermediate/12th, get ready for a high-paid job with CCBP 4.0 Academy. Learn 4 hours/week alongside your academics and become 4.0 industry-ready.<br />
+                        For those looking for a Tech Job, enroll in Intensive program. Learn with a Proven Curriculum and become a software developer.<br />
+                        For students, we invite you to join India’s Largest 4.0 Tech Student Community to grow faster with the right ecosystem of forward-thinking and tech-savvy minds.
+                    </p>
+                    <p>Wishing you tremendous success in your career!</p>
+                </div>
+                <div id="Fields" class="col-12 course-container">
+                    <div class="for-it-Container" onclick="display('sectionaboutitfield')">
+                        <h1 class="text-color">For IT Field</h1>
+                        <img src="https://thumbs.dreamstime.com/z/consultant-presenting-tag-cloud-information-technology-213591032.jpg" class="image" />
+                    </div>
+                    <div class="for-it-Container for-Agricultural" onclick="display('sectionaboutagricultural')">
+                        <h1 class="text-color">For Agricultural</h1>
+                        <img src="https://res.cloudinary.com/dsx3dj12i/image/upload/v1681730232/pexels-wendy-wei-1656663_oh5avn.jpg" class="image" />
+                    </div>
+                    <div class="for-it-Container for-formacy" onclick="display('sectionaboutformacy')">
+                        <h1 class="text-color">For B Formacy</h1>
+                        <img src="https://leverageedu.com/blog/wp-content/uploads/2022/01/Best-Courses-After-B-Pharmacy-for-Students-03-1.png" class="image" />
+                    </div>
+                </div>
+                <div id="contact" class="col-12 contat-container">
+                    <h1 class="contact-head">Contact Information</h1>
+                    <p class="address-description"><span class="address">Address: </span>Plot No 30, East Wing, Ground Floor, Financial District Nanakramguda, Serilingampalli, Hyderabad, Telangana 500032</p>
+                    <p class="address-description"><span class="address">Phone: </span> 63076xxxxx</p>
+                    <p class="address-description"><span class="address">Working Hours: </span>9:30AM to 6:30PM</p>
+                </div>
+                <div id="question" class="col-12 question-container">
+                    <h1 class="contact-head">Ask Your Question Related to Course</h1>
+                    <form class="form-container">
+                        <input id="name" placeholder="Your Name" class="name-input" />
+                        <textarea placeholder="Write your query" class="name-input"></textarea>
+                        <input type="submit" value="Submit" class="send-button" />
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="sectionaboutitfield" class="IT-page-ccontainer">
+        <h1 class="text-color">Courses</h1>
+        <div class="courses-container">
+            <div class="each-course-container">
+                <img src="https://www.python.org/static/community_logos/python-logo.png" />
+                <h1 class="each-course-cont-text"> Python FullStack</h1>
+            </div>
+            <div class="each-course-container">
+                <img src="https://wallpapercave.com/wp/wp5425565.png" class="java-logo" />
+                <h1 class="each-course-cont-text">Java FullStack</h1>
+            </div>
+            <div class="each-course-container">
+                <img src="https://d1b1fjiwh8olf2.cloudfront.net/icon/premium/png-512/1084052.png?token=eyJhbGciOiJoczI1NiIsImtpZCI6ImRlZmF1bHQifQ__.eyJpc3MiOiJkMWIxZmppd2g4b2xmMi5jbG91ZGZyb250Lm5ldCIsImV4cCI6MTY4MTk0ODgwMCwicSI6bnVsbCwiaWF0IjoxNjgxNzQxMDIzfQ__.0f95cd1ddcda5fec7e2123cfaf96ace55c0e3247e7ce33a56780de36695ec12a" class="java-logo" />
+                <h1 class="each-course-cont-text">Testing</h1>
+            </div>
+            <div class="each-course-container">
+                <img src="https://img.freepik.com/free-vector/creative-data-logo-template_23-2149217525.jpg?w=740&t=st=1681745604~exp=1681746204~hmac=e2ab206df7afa7a0162790b500bfd4d170bec887a9985d666bb0cadd86da6465" class="java-logo" />
+                <h1 class="each-course-cont-text">Data Analytics</h1>
+            </div>
+            <div class="each-course-container">
+                <img src="https://d1.awsstatic.com/logos/aws-logo-lockups/poweredbyaws/PB_AWS_logo_RGB_stacked_REV_SQ.91cd4af40773cbfbd15577a3c2b8a346fe3e8fa2.png" class="java-logo" />
+                <h1 class="each-course-cont-text">AWS</h1>
+            </div>
+        </div>
+        <div class="python-container">
+            <img src="https://img.freepik.com/free-vector/hand-drawn-web-developers-working_23-2148819605.jpg?t=st=1681737428~exp=1681738028~hmac=49061ea712aaef9e977611eb843707d3c3bcba7e7e8cea00b87bd8ea768ee5c3" class="python-image" />
+            <div class="d-flex flex-column">
+                <h1 class="description-size">Python Full Stack</h1>
+                <p>Python full stack development refers to the use of Python programming language for developing both the front-end (client-side) and back-end (server-side) components of a web application. A full stack developer is capable of working with both the front-end and back-end technologies, as well as databases and other related tools to create end-to-end web applications.</p>
+                <p>The skills required for Python full stack development typically include:</p>
+                <ol>
+                    <li>Python programming: Strong proficiency in Python, including understanding of core concepts such as data types, variables, control flow, functions, and object-oriented programming (OOP).</li>
+                    <li>Front-end technologies: Familiarity with front-end technologies such as HTML, CSS, and JavaScript. Knowledge of front-end libraries and frameworks like React, Angular, or Vue can also be beneficial</li>
+                    <li>Back-end technologies: Experience with back-end technologies such as Django or Flask, which are popular Python web frameworks for building server-side applications. Knowledge of databases such as MySQL, PostgreSQL, or MongoDB for data storage and retrieval is also important.</li>
+                </ol>
+            </div>
+        </div>
+        <div class="python-container java-container">
+            <div class="d-flex flex-column ">
+                <h1 class="description-size">Java Full Stack</h1>
+                <p>Java full stack development involves using Java programming language for developing both the front-end (client-side) and back-end (server-side) components of a web application. A Java full stack developer is proficient in working with both the front-end and back-end technologies, databases, and other related tools to create end-to-end web applications.</p>
+                <p>The skills required for Java full stack development typically include:</p>
+                <ol>
+                    <li>Java programming: Strong proficiency in Java, including understanding of core concepts such as data types, variables, control flow, exception handling, and object-oriented programming (OOP).</li>
+                    <li>Front-end technologies: Familiarity with front-end technologies such as HTML, CSS, and JavaScript. Knowledge of front-end libraries and frameworks like React, Angular, or Vue can also be beneficial</li>
+                    <li>Back-end technologies: Experience with back-end technologies such as Java web frameworks like Spring or JavaServer Faces (JSF), which are popular for building server-side applications. Knowledge of databases such as MySQL, PostgreSQL, or MongoDB for data storage and retrieval is also important.</li>
+                </ol>
+            </div>
+            <img src="https://img.freepik.com/premium-vector/full-stack-developer-working-computer-it-professional-programmer-coding-website-creation-proccess-computer-technology_277904-5495.jpg?w=740" class="python-image" />
+        </div>
+        <div class="python-container testing-container">
+            <img src="https://thumbs.dreamstime.com/z/software-testing-ability-woman-presenting-117564056.jpg" class="python-image" />
+            <div class="d-flex flex-column ">
+                <h1 class="description-size">Testing</h1>
+                <p>Testing, in the context of software development, refers to the process of evaluating a software system or application to identify defects, errors, or discrepancies between expected and actual behavior, and ensuring that it meets the specified requirements. Testing is a critical step in the software development lifecycle (SDLC) to ensure the quality, reliability, and functionality of the software.</p>
+                <p>There are various types of testing that can be performed at different stages of the SDLC, including:</p>
+                <ul>
+                    <li>Unit testing</li>
+                    <li>Integration testing</li>
+                    <li>System testing</li>
+                    <li>Acceptance testing</li>
+                    <li>Performance testing</li>
+                    <li>Security testing</li>
+                    <li>Usability testing</li>
+                </ul>
+                <p>Some of the key skills used in testing include:</p>
+                <ol>
+                    <li>Test design: The ability to create effective test cases, test scenarios, and test data to thoroughly test the software.</li>
+                    <li>Test execution: The ability to execute test cases and accurately record the results, identifying and reporting any defects or issues found during testing.</li>
+                    <li>Debugging: The ability to identify and isolate defects or issues found during testing and provide detailed information to developers for resolution.</li>
+                    <li>Test automation: Proficiency in using testing tools and frameworks for automating testing tasks, such as writing and executing automated test scripts.</li>
+                    <li>Domain knowledge: Understanding of the specific domain or industry for which the software is being developed, which may include healthcare, finance, e-commerce, etc., to ensure that the testing is relevant and effective.</li>
+                </ol>
+            </div>
+
+        </div>
+        <div class="python-container data-container">
+            <div class="d-flex flex-column ">
+                <h1 class="description-size">Data Analytics</h1>
+                <p>Data analytics is the process of examining, cleaning, transforming, and modeling data to extract useful information, draw conclusions, and support decision-making. It involves the use of various techniques and tools to analyze data and derive insights that can be used to drive business strategies, solve problems, and identify patterns or trends.</p>
+                <p>The skills involved in data analytics can vary depending on the specific role and the level of expertise required, but generally, the following skills are important:</p>
+                <ol>
+                    <li>Data literacy: This involves understanding data and being able to interpret and analyze it. It includes knowing different types of data, such as structured and unstructured data, and understanding data formats, data sources, and data quality.</li>
+                    <li>Statistical analysis: Knowledge of statistical concepts and techniques is crucial for data analytics. This includes understanding probability, hypothesis testing, regression analysis, and other statistical methods used for data analysis and inference.</li>
+                    <li>Data visualization: The ability to represent data visually using charts, graphs, and other visualizations is important for communicating insights and findings to stakeholders effectively. Data visualization skills include selecting appropriate visualizations, designing visually appealing and informative visualizations, and interpreting visualizations to derive insights.</li>
+                    <li>Data wrangling: Data analysts often need to clean, transform, and manipulate data to prepare it for analysis. This requires skills in data cleaning, data integration, data transformation, and data manipulation using tools such as SQL, Python, or R.</li>
+                    <li>Data mining and machine learning: Knowledge of data mining and machine learning techniques is useful for identifying patterns, trends, and relationships in large datasets. This includes skills in data clustering, classification, regression, and other machine learning techniques, as well as using tools such as scikit-learn, TensorFlow, or PyTorch.</li>
+                </ol>
+            </div>
+            <img src="https://img.freepik.com/free-photo/data-analysis-marketing-business-report-concept_53876-124759.jpg?w=740&t=st=1681745365~exp=1681745965~hmac=10643f3170ab56b4a270b024d8dc5fb6d6e1694a412a8aff9d52c63cd68c2fd2" class="python-image" />
+        </div>
+        <div class="python-container aws-container">
+            <img src="https://img.freepik.com/free-vector/isometric-cloud-storage-illustration_1284-32936.jpg?w=740&t=st=1681746302~exp=1681746902~hmac=479996937675171874c0797f7d3ac1ab6d9d2527fcf07b40aa240cbaf0ae560d" class="python-image" />
+            <div class="d-flex flex-column ">
+                <h1 class="description-size">AWS</h1>
+                <p>AWS (Amazon Web Services) is a cloud computing platform offered by Amazon that provides a wide range of cloud computing services, including computing power, storage, database management, networking, machine learning, and more. AWS allows organizations to leverage cloud resources to build and deploy applications, store and process data, and scale their IT infrastructure in a flexible and cost-effective manner.</p>
+                <p>The skills required for working with AWS can vary depending on the specific role and the services being used, but generally, the following skills are important:</p>
+                <ol>
+                    <li>Cloud computing fundamentals: Understanding the fundamental concepts and principles of cloud computing, such as virtualization, elasticity, scalability, and pay-as-you-go pricing models, is essential when working with AWS.</li>
+                    <li>AWS services: Familiarity with AWS services and their functionalities, including Compute services (e.g., EC2, Lambda), Storage services (e.g., S3, EBS), Database services (e.g., RDS, DynamoDB), Networking services (e.g., VPC, Route 53), and other services like IAM (Identity and Access Management), CloudFormation, and CloudWatch.</li>
+                    <li>AWS architecture and design: Knowledge of designing scalable and resilient architectures using AWS services, including best practices for building highly available and fault-tolerant applications on AWS, designing for security, performance optimization, and cost optimization.</li>
+                    <li>AWS CLI and SDKs: Proficiency in using the AWS Command Line Interface (CLI) and Software Development Kits (SDKs) for programming and automation tasks with AWS services using popular programming languages like Python, Java, or Node.js.</li>
+                    <li>Security and compliance: Understanding AWS security best practices, including securing data at rest and in transit, managing access controls, using encryption, and adhering to compliance standards like GDPR, HIPAA, or PCI-DSS.</li>
+                    <li>Troubleshooting and debugging: Ability to diagnose and resolve issues with AWS services, troubleshoot networking issues, analyze logs, and use monitoring and debugging tools like CloudWatch, X-Ray, or AWS Trusted Advisor.</li>
+                    <li>DevOps practices: Familiarity with DevOps principles and practices, including continuous integration, continuous deployment (CI/CD), infrastructure as code (IaC), and automation using tools like AWS CloudFormation, AWS CodePipeline, or AWS CodeDeploy.</li>
+                    <li>Migration and integration: Knowledge of migrating applications and data to AWS, integrating AWS services with on-premises systems or other cloud platforms, and understanding of AWS integration services like AWS App Integration, AWS Data Integration, or AWS Messaging Services.</li>
+                </ol>
+            </div>
+
+        </div>
+        <div>
+            <button class="btn btn-warning" onclick="display('section-home-page')">Back</button>
+        </div>
+    </div>
+    <div id="sectionaboutagricultural" class="IT-page-ccontainer">
+        <h1>Courses</h1>
+        <div class="d-flex flex-row">
+            <div class="d-flex-flex-row each-course-container">
+                <img src="http://nhp.mowr.gov.in/HIS/images/slide1.png" class="java-logo" />
+                <h1 class="each-course-cont-text">Tech in Hydrology and water resources</h1>
+            </div>
+            <div class="d-flex-flex-row each-course-container">
+                <img src="https://www.americanrivers.org/wp-content/uploads/2016/05/inforgraphic_integrated-water-management.jpg" class="java-logo" />
+                <h1 class="each-course-cont-text">Tech in integrated water resource management</h1>
+
+            </div>
+        </div>
+        <div class="python-container">
+            <img src="https://nhp.mowr.gov.in/HomeNew/assestsnew/images/project-component.jpg" class="python-image" />
+            <div>
+                <h1 class="description-size">Tech in Hydrology and water resources</h1>
+                <p>Hydrologists work in conjunction with the work of civil engineers in developing water resources infrastructure. Hydrology is the scientific study of the effects, properties and distribution of water on the earth's surface in soil, underlying rock structures and in the earth's atmosphere.</p>
+                <p>Learning About:</p>
+                <ul>
+                    <li>Chemical hydrology</li>
+                    <li>Ecohydrology</li>
+                    <li>Surface hydrology</li>
+                    <li>Hydrogeology</li>
+                </ul>
+            </div>
+        </div>
+        <div class="python-container testing-container ">
+            <img src="https://www.gwp.org/contentassets/88f9a30e73ac4e59ab379654c1ca07bf/5663957886_5b21290b6f_o.jpg" class="python-image" />
+            <div>
+                <h1 class="description-size">Tech in integrated water resource management</h1>
+                <p>Integrated water resources management is based on the perception of water as an integral part of the ecosystem, a natural resource and a social and economic good, whose quantity and quality determine the nature of its utilisation.</p>
+                <p>Learning About:</p>
+                <ul>
+                    <li>Reverse osmosis (RO)</li>
+                    <li>Ultrafiltration (UF)</li>
+                    <li>Microfiltration (MF)</li>
+                    <li>Nanofiltration (NF) </li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <button class="btn btn-warning" onclick="display('section-home-page')">Back</button>
+        </div>
+    </div>
+    <div id="sectionaboutformacy" class="IT-page-ccontainer ">
+        <h1>Courses</h1>
+        <div class="d-flex flex-row courses-container">
+            <div class="d-flex flex-column each-course-container">
+                <img src="https://thumbs.dreamstime.com/z/five-components-medical-coding-166786019.jpg" class="java-logo" />
+                <h1 class="each-course-cont-text">MedicalCoding</h1>
+            </div>
+            <div class="d-flex flex-column each-course-container">
+                <img src="https://www.jli.edu.in/blog/wp-content/uploads/2019/11/Data-Management-In-Clinical-Trials.png" class="java-logo" />
+                <h1 class="each-course-cont-text">Clinical Data Management</h1>
+            </div>
+            <div class="d-flex flex-column each-course-container">
+                <img src="https://as2.ftcdn.net/v2/jpg/00/47/35/67/1000_F_47356756_l37D9cq8wWisS8tCZVaADX7nHt081RZc.jpg" class="java-logo" />
+                <h1 class="each-course-cont-text">pharmacovigilance</h1>
+            </div>
+        </div>
+        <div class="d-flex flex-row python-container">
+            <div class="d-flex flex-column">
+                <h1 class="description-size">Medical Coding</h1>
+                <p>Medical coding is the process of translating medical diagnoses, procedures, and services into standardized codes for documentation, billing, and reimbursement purposes. It plays a critical role in healthcare revenue cycle management and ensuring accurate and compliant coding practices.</p>
+                <p>The skills typically learned in medical coding include:</p>
+                <ol>
+                    <li>Medical terminology: Understanding medical terminology, anatomy, physiology, and disease processes is essential for accurately assigning appropriate codes. Medical coders need to be familiar with medical terms and terminology conventions to interpret </li>
+                    <li>Coding systems: Familiarity with different coding systems used in medical coding, such as the International Classification of Diseases (ICD) for diagnoses, Current Procedural Terminology (CPT) for procedures, and Healthcare Common Procedure Coding System (HCPCS) for supplies, equipment, and services.</li>
+                    <li>Coding guidelines: Knowledge of coding guidelines and conventions established by coding organizations, such as the American Medical Association (AMA) and Centers for Medicare and Medicaid Services (CMS), including coding rules, documentation requirements, and coding modifiers.</li>
+                    <li>Regulatory compliance: Understanding of coding compliance regulations and guidelines, such as the Health Insurance Portability and Accountability Act (HIPAA), the Medicare Fraud and Abuse laws, and other industry-specific regulations related to medical coding and billing.</li>
+                    <li>Electronic Health Records (EHRs): Proficiency in using electronic health record (EHR) systems and other healthcare software applications for accessing and interpreting clinical documentation, documenting codes, and managing patient information.</li>
+                </ol>
+            </div>
+            <img src="https://thumbs.dreamstime.com/z/five-components-medical-coding-239565488.jpg" class="python-image" />
+        </div>
+        <div class="d-flex flex-row python-container java-container">
+            <img src="https://xcelcareer.com/wp-content/uploads/2018/11/Clinical-Data-Management-Process.png" class="python-image" />
+            <div class="d-flex flex-column">
+                <h1 class="description-size">Clinical Data Management</h1>
+                <p>Clinical data management (CDM) is a critical function in the field of clinical research that involves the collection, storage, analysis, and reporting of clinical trial data. CDM professionals are responsible for ensuring that clinical data is captured accurately, processed efficiently, and maintained securely in compliance with regulatory requirements.</p>
+                <p>Here are some key skills and competencies that are typically required for a career in clinical data management:</p>
+                <ol>
+                    <li>Data Collection and Validation: CDM professionals should have a strong understanding of data collection methods and be able to validate the accuracy and completeness of data obtained from various sources, such as electronic case report forms (eCRFs), medical records, and laboratory results.</li>
+                    <li>Data Cleaning and Query Management: CDM professionals need to be proficient in data cleaning techniques and have the ability to identify and resolve data discrepancies and queries in a timely and efficient manner. This may involve working closely with investigators, site personnel, and other stakeholders to address data-related issues.</li>
+                    <li>Database Design and EDC Systems: Knowledge of database design principles and experience with Electronic Data Capture (EDC) systems, which are widely used in clinical trials for data collection and management, is crucial. Familiarity with EDC systems such as Medidata Rave, Oracle InForm, or IBM Clinical Development is often required.</li>
+                    <li>Regulatory Compliance: CDM professionals must have a thorough understanding of regulatory requirements related to clinical data management, such as Good Clinical Data Management Practices (GCDMP), International Conference on Harmonisation (ICH) guidelines, and local regulations. This includes ensuring data integrity, maintaining confidentiality, and adhering to data standards.</li>
+                </ol>
+            </div>
+
+        </div>
+        <div class="d-flex flex-row python-container testing-container">
+            <img src="https://www.shutterstock.com/image-vector/pharmacovigilance-evaluation-control-pharmacy-600w-266116682.jpg" class="python-image" />
+            <div class="d-flex flex-column">
+                <h1 class="description-size">pharmacovigilance</h1>
+                <p>Clinical data management (CDM) is a critical function in the field of clinical research that involves the collection, storage, analysis, and reporting of clinical trial data. CDM professionals are responsible for ensuring that clinical data is captured accurately, processed efficiently, and maintained securely in compliance with regulatory requirements.</p>
+                <p>Here are some key skills and competencies that are typically required for a career in clinical data management:</p>
+                <ol>
+                    <li>Data Collection and Validation: CDM professionals should have a strong understanding of data collection methods and be able to validate the accuracy and completeness of data obtained from various sources, such as electronic case report forms (eCRFs), medical records, and laboratory results.</li>
+                    <li>Data Cleaning and Query Management: CDM professionals need to be proficient in data cleaning techniques and have the ability to identify and resolve data discrepancies and queries in a timely and efficient manner. This may involve working closely with investigators, site personnel, and other stakeholders to address data-related issues.</li>
+                    <li>Database Design and EDC Systems: Knowledge of database design principles and experience with Electronic Data Capture (EDC) systems, which are widely used in clinical trials for data collection and management, is crucial. Familiarity with EDC systems such as Medidata Rave, Oracle InForm, or IBM Clinical Development is often required.</li>
+                    <li>Regulatory Compliance: CDM professionals must have a thorough understanding of regulatory requirements related to clinical data management, such as Good Clinical Data Management Practices (GCDMP), International Conference on Harmonisation (ICH) guidelines, and local regulations. This includes ensuring data integrity, maintaining confidentiality, and adhering to data standards.</li>
+                </ol>
+            </div>
+
+        </div>
+        <div>
+            <button class="btn btn-warning" onclick="display('section-home-page')">Back</button>
+        </div>
+    </div>
+
+
+
+
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+
+</html>
